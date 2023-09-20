@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+            margin : 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1 {
+            margin : 10px;
+        }
+
+        .buttonWrapper:hover .buttonDetail {
+            display : block;
+        }
+
+        #BUTTON {
+            background-color: green;
+            border-radius: 10px;
+            width : 100px;
+            text-align: center;
+            padding: 10px;
+            margin : 10px;
+        }
+        #buttonDetail {
+            display : none;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            console.log("hello world")
+            if (document.getElementById("buttonDetail").style.display == "block") {
+                document.getElementById("buttonDetail").style.display = "none";
+            } else {
+                document.getElementById("buttonDetail").style.display = "block";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="w3-include-html">
+        <h1>PAGE HEADER</h1>
+        <div class="buttonWrapper">
+            <div id="BUTTON" onclick="myFunction()">BUTTON</div>
+            <div id="buttonDetail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt illo fugiat dolorem illum. Quos quia nulla officia officiis quaerat modi quod maxime soluta dolores, id eum repellat labore ratione reiciendis quam totam? Optio inventore enim similique earum vel, repudiandae exercitationem perferendis sint veritatis harum in, odit reprehenderit. Incidunt, possimus quod!</div>
+        </div>
+    </div>
+    blah
+</body>
+</html>
